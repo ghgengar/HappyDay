@@ -81,7 +81,6 @@ class BirthDay(object):
 			today = self.day_today()
 			today_dates = []
 			near_dates = self.future_past(self.dates, notalk = True)[:3]
-			print(near_dates)
 			for i in dates:
 				if i[2] == BirthDay.months[int(today[0])-1] and i[1] == today[1]:
 					today_dates.append(i)
